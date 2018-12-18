@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Dec 11, 2018 at 09:43 AM
+-- Generation Time: Dec 18, 2018 at 11:01 AM
 -- Server version: 5.7.24-0ubuntu0.16.04.1
 -- PHP Version: 7.0.32-0ubuntu0.16.04.1
 
@@ -720,7 +720,12 @@ INSERT INTO `hcms_utils_master_code` (`code_id`, `code_type`, `code_sub_type`, `
 (672, 'HOLIDAY_DETAIL_TYPE', NULL, '3', 'Half(pm)', NULL, '2018-12-10 00:00:00.000000', 1, '2018-12-10 00:00:00.000000', 1, 'N'),
 (673, 'LEAVE_STATUS', NULL, '1', 'Approved', NULL, '2018-12-10 00:00:00.000000', 1, '2018-12-10 00:00:00.000000', 1, 'N'),
 (674, 'LEAVE_STATUS', NULL, '2', 'Rejected', NULL, '2018-12-10 00:00:00.000000', 1, '2018-12-10 00:00:00.000000', 1, 'N'),
-(675, 'LEAVE_STATUS', NULL, '3', 'Pending', NULL, '2018-12-10 00:00:00.000000', 1, '2018-12-10 00:00:00.000000', 1, 'N');
+(675, 'LEAVE_STATUS', NULL, '3', 'Pending', NULL, '2018-12-10 00:00:00.000000', 1, '2018-12-10 00:00:00.000000', 1, 'N'),
+(676, 'CHANGE_SCHEDULE_RESULT', NULL, '1', 'Pending', NULL, '2018-12-17 00:00:00.000000', 1, '2018-12-17 00:00:00.000000', 1, 'N'),
+(677, 'CHANGE_SCHEDULE_RESULT', NULL, '2', 'Approved', NULL, '2018-12-17 00:00:00.000000', 1, '2018-12-17 00:00:00.000000', 1, 'N'),
+(678, 'CHANGE_SCHEDULE_RESULT', NULL, '3', 'Rejected', NULL, '2018-12-17 00:00:00.000000', 1, '2018-12-17 00:00:00.000000', 1, 'N'),
+(679, 'CHANGE_SCHEDULE_STATUS', NULL, '1', 'Available', NULL, '2018-12-17 00:00:00.000000', 1, '2018-12-17 00:00:00.000000', 1, 'N'),
+(680, 'CHANGE_SCHEDULE_STATUS', NULL, '2', 'Unavailable', NULL, '2018-12-17 00:00:00.000000', 1, '2018-12-17 00:00:00.000000', 1, 'N');
 
 --
 -- Indexes for dumped tables
@@ -740,7 +745,7 @@ ALTER TABLE `hcms_utils_master_code`
 -- AUTO_INCREMENT for table `hcms_utils_master_code`
 --
 ALTER TABLE `hcms_utils_master_code`
-  MODIFY `code_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=676;
+  MODIFY `code_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=681;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
