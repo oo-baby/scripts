@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Dec 18, 2018 at 11:01 AM
+-- Generation Time: Dec 20, 2018 at 04:08 PM
 -- Server version: 5.7.24-0ubuntu0.16.04.1
 -- PHP Version: 7.0.32-0ubuntu0.16.04.1
 
@@ -302,9 +302,7 @@ INSERT INTO `hcms_utils_master_code` (`code_id`, `code_type`, `code_sub_type`, `
 (255, 'COMPATIBILITY_TYPE', '', '3', 'Average', '', '2018-10-05 17:20:44.000000', 1, '2018-10-05 17:20:44.000000', 1, 'N'),
 (256, 'COMPATIBILITY_TYPE', '', '4', 'Poor (Warn)', '', '2018-10-05 17:20:44.000000', 1, '2018-10-05 17:20:44.000000', 1, 'N'),
 (257, 'COMPATIBILITY_TYPE', '', '5', 'Bad (Prevent)', '', '2018-10-05 17:20:44.000000', 1, '2018-10-05 17:20:44.000000', 1, 'N'),
-(258, 'PREFERENCE_TYPE', '', '1', 'Females Only', '', '2018-10-05 17:20:44.000000', 1, '2018-10-05 17:20:44.000000', 1, 'N'),
-(259, 'PREFERENCE_TYPE', '', '2', 'Males Only', '', '2018-10-05 17:20:44.000000', 1, '2018-10-05 17:20:44.000000', 1, 'N'),
-(260, 'PREFERENCE_TYPE', '', '3', 'Non Smokers Only', '', '2018-10-05 17:20:44.000000', 1, '2018-10-05 17:20:44.000000', 1, 'N'),
+(260, 'PREFERENCE_TYPE', '', '3', 'No Pets', '__,c,1', '2018-10-05 17:20:44.000000', 1, '2018-10-05 17:20:44.000000', 1, 'N'),
 (261, 'LANGUAGE_PROFICIENCY', '', '1', 'Mother Tongue', '', '2018-10-05 17:20:44.000000', 1, '2018-10-05 17:20:44.000000', 1, 'N'),
 (262, 'LANGUAGE_PROFICIENCY', '', '2', 'Fluent', '', '2018-10-05 17:20:44.000000', 1, '2018-10-05 17:20:44.000000', 1, 'N'),
 (263, 'LANGUAGE_PROFICIENCY', '', '3', 'Good', '', '2018-10-05 17:20:44.000000', 1, '2018-10-05 17:20:44.000000', 1, 'N'),
@@ -448,10 +446,10 @@ INSERT INTO `hcms_utils_master_code` (`code_id`, `code_type`, `code_sub_type`, `
 (401, 'TEAM', '', '15', 'Supported Living (Southbury Road Enfield)', '', '2018-10-05 17:20:51.000000', 1, '2018-10-05 17:20:51.000000', 1, 'N'),
 (402, 'TEAM', '', '16', 'PTS', '', '2018-10-05 17:20:51.000000', 1, '2018-10-05 17:20:51.000000', 1, 'N'),
 (403, 'TEAM', '', '17', 'Rose House', '', '2018-10-05 17:20:51.000000', 1, '2018-10-05 17:20:51.000000', 1, 'N'),
-(404, 'TEAM', '', '18', 'York House', '', '2018-10-05 17:20:51.000000', 1, '2018-10-05 17:20:51.000000', 1, 'N');
-INSERT INTO `hcms_utils_master_code` (`code_id`, `code_type`, `code_sub_type`, `code_no`, `code_val`, `code_description`, `created_date`, `created_by`, `last_modified_date`, `last_modified_by`, `delete_ind`) VALUES
+(404, 'TEAM', '', '18', 'York House', '', '2018-10-05 17:20:51.000000', 1, '2018-10-05 17:20:51.000000', 1, 'N'),
 (405, 'TEAM', '', '19', 'Roselands', '', '2018-10-05 17:20:52.000000', 1, '2018-10-05 17:20:52.000000', 1, 'N'),
-(406, 'TEAM', '', '20', 'Mpower', '', '2018-10-05 17:20:52.000000', 1, '2018-10-05 17:20:52.000000', 1, 'N'),
+(406, 'TEAM', '', '20', 'Mpower', '', '2018-10-05 17:20:52.000000', 1, '2018-10-05 17:20:52.000000', 1, 'N');
+INSERT INTO `hcms_utils_master_code` (`code_id`, `code_type`, `code_sub_type`, `code_no`, `code_val`, `code_description`, `created_date`, `created_by`, `last_modified_date`, `last_modified_by`, `delete_ind`) VALUES
 (407, 'TEAM', '', '21', 'Smerdon', '', '2018-10-05 17:20:52.000000', 1, '2018-10-05 17:20:52.000000', 1, 'N'),
 (408, 'TEAM', '', '22', 'Southwark', '', '2018-10-05 17:20:52.000000', 1, '2018-10-05 17:20:52.000000', 1, 'N'),
 (409, 'CARE_WORKER_GRADE', '', '1', 'Grade-AA4', '', '2018-10-05 17:20:52.000000', 1, '2018-10-05 17:20:52.000000', 1, 'N'),
@@ -700,13 +698,13 @@ INSERT INTO `hcms_utils_master_code` (`code_id`, `code_type`, `code_sub_type`, `
 (652, 'TRAINING_TYPE', '', '70', 'Social Care TV - COSHH', '', '2018-10-05 17:21:05.000000', 1, '2018-10-05 17:21:05.000000', 1, 'N'),
 (653, 'TRAINING_TYPE', '', '71', 'Stoma Care', '', '2018-10-05 17:21:05.000000', 1, '2018-10-05 17:21:05.000000', 1, 'N'),
 (654, 'TRAINING_TYPE', '', '72', 'Understanding Dementia', '', '2018-10-05 17:21:05.000000', 1, '2018-10-05 17:21:05.000000', 1, 'N'),
-(655, 'PREFERENCE_TYPE', '', '1', 'Senior', 'profile__dob', '2018-10-05 17:21:05.000000', 1, '2018-10-05 17:21:05.000000', 1, 'N'),
-(656, 'PREFERENCE_TYPE', '', '2', 'Smoking', 'profile__smoker', '2018-10-05 17:21:05.000000', 1, '2018-10-05 17:21:05.000000', 1, 'N'),
-(657, 'PREFERENCE_TYPE', '', '3', 'Gender', 'profile__sex_mc_id', '2018-10-05 17:21:05.000000', 1, '2018-10-05 17:21:05.000000', 1, 'N'),
-(658, 'PREFERENCE_TYPE', '', '4', 'Named Careworker', 'user_id', '2018-10-05 17:21:05.000000', 1, '2018-10-05 17:21:05.000000', 1, 'N'),
-(659, 'PREFERENCE_TYPE', '', '5', 'Religion', 'profile__religion_mc_id', '2018-10-05 17:21:05.000000', 1, '2018-10-05 17:21:05.000000', 1, 'N'),
-(660, 'PREFERENCE_TYPE', '', '6', 'Ethnicity', 'profile__ethnicity_mc_id', '2018-10-05 17:21:05.000000', 1, '2018-10-05 17:21:05.000000', 1, 'N'),
-(661, 'PREFERENCE_TYPE', '', '7', 'Language', 'language__language_name_mc_id', '2018-10-05 17:21:05.000000', 1, '2018-10-05 17:21:05.000000', 1, 'N'),
+(655, 'PREFERENCE_TYPE', '', '1', 'Age', 'profile__dob,s,0', '2018-10-05 17:21:05.000000', 1, '2018-10-05 17:21:05.000000', 1, 'N'),
+(656, 'PREFERENCE_TYPE', '', '2', 'Non Smoking', 'profile__smoker,cs,1', '2018-10-05 17:21:05.000000', 1, '2018-10-05 17:21:05.000000', 1, 'N'),
+(657, 'PREFERENCE_TYPE', '', '3', 'Same Gender', 'profile__sex_mc_id,cs,0', '2018-10-05 17:21:05.000000', 1, '2018-10-05 17:21:05.000000', 1, 'N'),
+(658, 'PREFERENCE_TYPE', '', '4', 'Named Careworker', 'user_id,s,0', '2018-10-05 17:21:05.000000', 1, '2018-10-05 17:21:05.000000', 1, 'N'),
+(659, 'PREFERENCE_TYPE', '', '5', 'Same Religion', 'profile__religion_mc_id,s,0', '2018-10-05 17:21:05.000000', 1, '2018-10-05 17:21:05.000000', 1, 'N'),
+(660, 'PREFERENCE_TYPE', '', '6', 'Same Ethnicity', 'profile__ethnicity_mc_id,s,0', '2018-10-05 17:21:05.000000', 1, '2018-10-05 17:21:05.000000', 1, 'N'),
+(661, 'PREFERENCE_TYPE', '', '7', 'Same Language', 'language__language_name_mc_id,s,1', '2018-10-05 17:21:05.000000', 1, '2018-10-05 17:21:05.000000', 1, 'N'),
 (662, 'PREFERENCE_INCORPERATION_TYPE', '', '1', 'Hard', '', '2018-10-05 17:21:05.000000', 1, '2018-10-05 17:21:05.000000', 1, 'N'),
 (663, 'PREFERENCE_INCORPERATION_TYPE', '', '2', 'Soft', '', '2018-10-05 17:21:05.000000', 1, '2018-10-05 17:21:05.000000', 1, 'N'),
 (664, 'AVAILABILITY', '', '1', 'Available', '', '2018-10-05 17:21:05.000000', 1, '2018-10-05 17:21:05.000000', 1, 'N'),
@@ -725,7 +723,31 @@ INSERT INTO `hcms_utils_master_code` (`code_id`, `code_type`, `code_sub_type`, `
 (677, 'CHANGE_SCHEDULE_RESULT', NULL, '2', 'Approved', NULL, '2018-12-17 00:00:00.000000', 1, '2018-12-17 00:00:00.000000', 1, 'N'),
 (678, 'CHANGE_SCHEDULE_RESULT', NULL, '3', 'Rejected', NULL, '2018-12-17 00:00:00.000000', 1, '2018-12-17 00:00:00.000000', 1, 'N'),
 (679, 'CHANGE_SCHEDULE_STATUS', NULL, '1', 'Available', NULL, '2018-12-17 00:00:00.000000', 1, '2018-12-17 00:00:00.000000', 1, 'N'),
-(680, 'CHANGE_SCHEDULE_STATUS', NULL, '2', 'Unavailable', NULL, '2018-12-17 00:00:00.000000', 1, '2018-12-17 00:00:00.000000', 1, 'N');
+(680, 'CHANGE_SCHEDULE_STATUS', NULL, '2', 'Unavailable', NULL, '2018-12-17 00:00:00.000000', 1, '2018-12-17 00:00:00.000000', 1, 'N'),
+(681, 'REPORTED_TYPE_CW', NULL, '1', 'Service User', NULL, '2018-12-17 00:00:00.000000', 1, '2018-12-17 00:00:00.000000', 1, 'N'),
+(682, 'REPORTED_TYPE_CW', NULL, '2', 'Fellow Careworker', NULL, '2018-12-17 00:00:00.000000', 1, '2018-12-17 00:00:00.000000', 1, 'N'),
+(683, 'REPORTED_TYPE_CW', NULL, '3', 'NOK', NULL, '2018-12-17 00:00:00.000000', 1, '2018-12-17 00:00:00.000000', 1, 'N'),
+(684, 'REPORTED_TYPE_CW', NULL, '4', 'Co-ordinator', NULL, '2018-12-17 00:00:00.000000', 1, '2018-12-17 00:00:00.000000', 1, 'N'),
+(685, 'REPORTED_TYPE_CW', NULL, '5', 'Supervisor', NULL, '2018-12-17 00:00:00.000000', 1, '2018-12-17 00:00:00.000000', 1, 'N'),
+(686, 'REPORTED_TYPE_COR', NULL, '1', 'Service User', NULL, '2018-12-17 00:00:00.000000', 1, '2018-12-17 00:00:00.000000', 1, 'N'),
+(687, 'REPORTED_TYPE_COR', NULL, '2', 'Care Worker', NULL, '2018-12-17 00:00:00.000000', 1, '2018-12-17 00:00:00.000000', 1, 'N'),
+(688, 'REPORTED_TYPE_COR', NULL, '3', 'NOK', NULL, '2018-12-17 00:00:00.000000', 1, '2018-12-17 00:00:00.000000', 1, 'N'),
+(689, 'REPORTED_TYPE_COR', NULL, '4', 'Supervisor', NULL, '2018-12-17 00:00:00.000000', 1, '2018-12-17 00:00:00.000000', 1, 'N'),
+(690, 'REPORTED_TYPE_SUP', NULL, '1', 'Service User', NULL, '2018-12-17 00:00:00.000000', 1, '2018-12-17 00:00:00.000000', 1, 'N'),
+(691, 'REPORTED_TYPE_SUP', NULL, '2', 'Care Worker', NULL, '2018-12-17 00:00:00.000000', 1, '2018-12-17 00:00:00.000000', 1, 'N'),
+(692, 'REPORTED_TYPE_SUP', NULL, '3', 'NOK', NULL, '2018-12-17 00:00:00.000000', 1, '2018-12-17 00:00:00.000000', 1, 'N'),
+(693, 'REPORTED_TYPE_SUP', NULL, '4', 'Co-ordinator', NULL, '2018-12-17 00:00:00.000000', 1, '2018-12-17 00:00:00.000000', 1, 'N'),
+(694, 'REPORTED_TYPE_SU', NULL, '1', 'Supervisor', NULL, '2018-12-17 00:00:00.000000', 1, '2018-12-17 00:00:00.000000', 1, 'N'),
+(695, 'REPORTED_TYPE_SU', NULL, '2', 'Care Worker', NULL, '2018-12-17 00:00:00.000000', 1, '2018-12-17 00:00:00.000000', 1, 'N'),
+(696, 'REPORTED_TYPE_SU', NULL, '3', 'Co-ordinator', NULL, '2018-12-17 00:00:00.000000', 1, '2018-12-17 00:00:00.000000', 1, 'N'),
+(697, 'REPORTED_TYPE_NOK', NULL, '1', 'Supervisor', NULL, '2018-12-17 00:00:00.000000', 1, '2018-12-17 00:00:00.000000', 1, 'N'),
+(698, 'REPORTED_TYPE_NOK', NULL, '2', 'Care Worker', NULL, '2018-12-17 00:00:00.000000', 1, '2018-12-17 00:00:00.000000', 1, 'N'),
+(699, 'REPORTED_TYPE_NOK', NULL, '3', 'Co-ordinator', NULL, '2018-12-17 00:00:00.000000', 1, '2018-12-17 00:00:00.000000', 1, 'N'),
+(700, 'REPORTED_TYPE_MED', NULL, '1', 'Service User', NULL, '2018-12-17 00:00:00.000000', 1, '2018-12-17 00:00:00.000000', 1, 'N'),
+(701, 'REPORTED_TYPE_MED', NULL, '2', 'Care Worker', NULL, '2018-12-17 00:00:00.000000', 1, '2018-12-17 00:00:00.000000', 1, 'N'),
+(702, 'REPORTED_TYPE_MED', NULL, '3', 'Co-ordinator', NULL, '2018-12-17 00:00:00.000000', 1, '2018-12-17 00:00:00.000000', 1, 'N'),
+(703, 'REPORTED_TYPE_SOCIAL', NULL, '1', 'Service User', NULL, '2018-12-17 00:00:00.000000', 1, '2018-12-17 00:00:00.000000', 1, 'N'),
+(704, 'REPORTED_TYPE_SOCIAL', NULL, '2', 'Care Worker', NULL, '2018-12-17 00:00:00.000000', 1, '2018-12-17 00:00:00.000000', 1, 'N');
 
 --
 -- Indexes for dumped tables
@@ -745,7 +767,7 @@ ALTER TABLE `hcms_utils_master_code`
 -- AUTO_INCREMENT for table `hcms_utils_master_code`
 --
 ALTER TABLE `hcms_utils_master_code`
-  MODIFY `code_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=681;
+  MODIFY `code_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=705;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
