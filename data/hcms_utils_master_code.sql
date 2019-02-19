@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Dec 21, 2018 at 12:41 PM
--- Server version: 5.7.24-0ubuntu0.16.04.1
--- PHP Version: 7.0.32-0ubuntu0.16.04.1
+-- Generation Time: Feb 19, 2019 at 12:39 PM
+-- Server version: 5.7.25-0ubuntu0.16.04.2
+-- PHP Version: 7.0.33-0ubuntu0.16.04.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -701,13 +701,12 @@ INSERT INTO `hcms_utils_master_code` (`code_id`, `code_type`, `code_sub_type`, `
 (655, 'PREFERENCE_TYPE', '', '1', 'Age', 'profile__dob,s,0', '2018-10-05 17:21:05.000000', 1, '2018-10-05 17:21:05.000000', 1, 'N'),
 (656, 'PREFERENCE_TYPE', '', '2', 'Non Smoking', 'profile__smoker,cs,1', '2018-10-05 17:21:05.000000', 1, '2018-10-05 17:21:05.000000', 1, 'N'),
 (657, 'PREFERENCE_TYPE', '', '3', 'Same Gender', 'profile__sex_mc_id,cs,0', '2018-10-05 17:21:05.000000', 1, '2018-10-05 17:21:05.000000', 1, 'N'),
-(658, 'PREFERENCE_TYPE', '', '4', 'Named Careworker', 'user_id,s,0', '2018-10-05 17:21:05.000000', 1, '2018-10-05 17:21:05.000000', 1, 'N'),
+(658, 'PREFERENCE_TYPE', '', '4', 'Named Care Worker', 'user_id,s,0', '2018-10-05 17:21:05.000000', 1, '2018-10-05 17:21:05.000000', 1, 'N'),
 (659, 'PREFERENCE_TYPE', '', '5', 'Same Religion', 'profile__religion_mc_id,s,0', '2018-10-05 17:21:05.000000', 1, '2018-10-05 17:21:05.000000', 1, 'N'),
 (660, 'PREFERENCE_TYPE', '', '6', 'Same Ethnicity', 'profile__ethnicity_mc_id,s,0', '2018-10-05 17:21:05.000000', 1, '2018-10-05 17:21:05.000000', 1, 'N'),
 (661, 'PREFERENCE_TYPE', '', '7', 'Same Language', 'language__language_name_mc_id,s,1', '2018-10-05 17:21:05.000000', 1, '2018-10-05 17:21:05.000000', 1, 'N'),
 (662, 'PREFERENCE_INCORPERATION_TYPE', '', '1', 'Hard', '', '2018-10-05 17:21:05.000000', 1, '2018-10-05 17:21:05.000000', 1, 'N'),
 (663, 'PREFERENCE_INCORPERATION_TYPE', '', '2', 'Soft', '', '2018-10-05 17:21:05.000000', 1, '2018-10-05 17:21:05.000000', 1, 'N'),
-(664, 'AVAILABILITY', '', '1', 'Available', '', '2018-10-05 17:21:05.000000', 1, '2018-10-05 17:21:05.000000', 1, 'N'),
 (665, 'LEAVE_TYPE', NULL, '1', 'Career Break', NULL, '2018-12-10 00:00:00.000000', 1, '2018-12-10 00:00:00.000000', 1, 'N'),
 (666, 'LEAVE_TYPE', NULL, '2', 'Long term sick', NULL, '2018-12-10 00:00:00.000000', 1, '2018-12-10 00:00:00.000000', 1, 'N'),
 (667, 'LEAVE_TYPE', NULL, '3', 'Maternity Leave', NULL, '2018-12-10 00:00:00.000000', 1, '2018-12-10 00:00:00.000000', 1, 'N'),
@@ -747,7 +746,18 @@ INSERT INTO `hcms_utils_master_code` (`code_id`, `code_type`, `code_sub_type`, `
 (701, 'REPORTED_TYPE_MED', NULL, '2', '3', 'Care Worker', '2018-12-17 00:00:00.000000', 1, '2018-12-17 00:00:00.000000', 1, 'N'),
 (702, 'REPORTED_TYPE_MED', NULL, '3', '1', 'Co-ordinator', '2018-12-17 00:00:00.000000', 1, '2018-12-17 00:00:00.000000', 1, 'N'),
 (703, 'REPORTED_TYPE_SOCIAL', NULL, '1', '2', 'Service User', '2018-12-17 00:00:00.000000', 1, '2018-12-17 00:00:00.000000', 1, 'N'),
-(704, 'REPORTED_TYPE_SOCIAL', NULL, '2', '3', 'Care Worker', '2018-12-17 00:00:00.000000', 1, '2018-12-17 00:00:00.000000', 1, 'N');
+(704, 'REPORTED_TYPE_SOCIAL', NULL, '2', '3', 'Care Worker', '2018-12-17 00:00:00.000000', 1, '2018-12-17 00:00:00.000000', 1, 'N'),
+(705, 'DEFAULT_AVAILABILITY_RESULT', NULL, '1', 'Pending', NULL, '2019-01-24 00:00:00.000000', 1, '2019-01-24 00:00:00.000000', 1, 'N'),
+(706, 'DEFAULT_AVAILABILITY_RESULT', NULL, '2', 'Approved', NULL, '2019-01-24 00:00:00.000000', 1, '2019-01-24 00:00:00.000000', 1, 'N'),
+(707, 'DEFAULT_AVAILABILITY_RESULT', NULL, '3', 'Rejected', NULL, '2019-01-24 00:00:00.000000', 1, '2019-01-24 00:00:00.000000', 1, 'N'),
+(708, 'DEFAULT_AVAILABILITY_STATUS', NULL, '1', 'Available', NULL, '2019-01-24 00:00:00.000000', 1, '2019-01-24 00:00:00.000000', 1, 'N'),
+(709, 'DEFAULT_AVAILABILITY_STATUS', NULL, '1', 'Unavailable', NULL, '2019-01-24 00:00:00.000000', 1, '2019-01-24 00:00:00.000000', 1, 'N'),
+(710, 'CURRENT_LOCATION_STATUS', NULL, '1', 'In Office', NULL, '2019-01-24 00:00:00.000000', 1, '2019-01-24 00:00:00.000000', 1, 'N'),
+(711, 'CURRENT_LOCATION_STATUS', NULL, '2', 'On Leave', NULL, '2019-01-24 00:00:00.000000', 1, '2019-01-24 00:00:00.000000', 1, 'N'),
+(712, 'CW_STATUS', NULL, '1', 'Active', NULL, '2019-02-19 00:00:00.000000', 1, '2019-02-19 00:00:00.000000', 1, 'N'),
+(713, 'CW_STATUS', NULL, '2', 'Suspended', NULL, '2019-02-19 00:00:00.000000', 1, '2019-02-19 00:00:00.000000', 1, 'N'),
+(714, 'CW_STATUS', NULL, '3', 'Leave', NULL, '2019-02-19 00:00:00.000000', 1, '2019-02-19 00:00:00.000000', 1, 'N'),
+(715, 'CW_STATUS', NULL, '4', 'Terminated', NULL, '2019-02-19 00:00:00.000000', 1, '2019-02-19 00:00:00.000000', 1, 'N');
 
 --
 -- Indexes for dumped tables
@@ -767,7 +777,7 @@ ALTER TABLE `hcms_utils_master_code`
 -- AUTO_INCREMENT for table `hcms_utils_master_code`
 --
 ALTER TABLE `hcms_utils_master_code`
-  MODIFY `code_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=705;
+  MODIFY `code_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=716;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
